@@ -474,7 +474,7 @@ header {
   width: 100%;
   padding-top: 3px;
   border-bottom: 2px solid #000;
-  transition: all 250ms;
+  
 }
 
 
@@ -612,6 +612,10 @@ margin-bottom: 16px;
   margin-bottom: 37px;
 }
 
+.our-features p {
+  margin-bottom: 24px;
+}
+
 .our-features ul li button {
   border: none;
   outline: none;
@@ -634,6 +638,7 @@ align-items: center;
   background-color: #fff;
   transition: 100ms ease-in-out;
   color: #13ab4e;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
 }
 
 .our-features h3 {
@@ -953,6 +958,26 @@ cursor: pointer;
   list-style-type: none;
   width: 527px;
   margin: 0 auto;
+}
+
+.pre-second-last-arrow {
+  width: 527px;
+  height: 64px;
+  background-color: #F7F8FA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+
+.pre-second-last-arrow p {
+  margin-left: 24px;
+  font-size: 16px;
+}
+
+.pre-second-last-arrow img {
+  margin-right: 24px;
 }
 
 .nimbly-form-table li p {
