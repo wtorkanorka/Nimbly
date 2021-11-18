@@ -477,15 +477,6 @@ header {
   transition: all 250ms;
 }
 
-.header-right-part a::before {
-  background: url(assets/Person-profile.png);
-  content: "";
-  float: left;
-  height: 30px;
-  width: 30px;
-  background-repeat: no-repeat;
-  margin-top: 15px;
-}
 
 .header-right-part a {
   text-decoration: none;
