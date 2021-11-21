@@ -500,6 +500,14 @@ body {
   z-index: -2;
 }
 
+.background-our-features {
+  top: 1636px;
+}
+
+.background-customer-say {
+  top: 4816px;
+}
+
 .page-width {
   width: 1170px;
   margin: 0 auto;
@@ -932,11 +940,15 @@ header {
   padding: 28px 0;
   border-bottom: 1px solid #dedede;
   cursor: pointer;
+  align-items: center;
+  position: relative;
 }
 
-.industries-button-bottom p {
+.industries-button-bottom span {
   font-size: 24px;
   line-height: 20px;
+  position: absolute;
+ margin-left: 64px;
 }
 
 .industries-link button {
@@ -944,7 +956,7 @@ header {
   align-items: center;
 }
 
-.industries-link button p {
+.industries-link button span {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -1074,6 +1086,8 @@ header {
   margin: 0 auto;
 }
 
+
+
 .nimbly-form-select-industry {
   width: 527px;
   height: 64px;
@@ -1082,6 +1096,7 @@ header {
   justify-content: space-between;
   align-items: center;
   border-radius: 8px;
+  margin-top: 12px;
 }
 
 .nimbly-form-select-industry p {
@@ -1096,14 +1111,14 @@ header {
   padding: 0px;
 }
 
-.nimbly-form-table li p {
+/* .nimbly-form-table li label {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 12px;
   margin-top: 16px;
-}
+} */
 
 .nimbly-form-table li input {
   height: 64px;
@@ -1113,6 +1128,8 @@ header {
   font-size: 16px;
   padding-left: 24px;
   border-radius: 8px;
+  margin-top: 12px;
+  margin-bottom: 16px;
 }
 
 .nimbly-form-button {
