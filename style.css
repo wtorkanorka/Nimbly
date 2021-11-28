@@ -504,7 +504,7 @@ body {
  
 }
 
-.background-our-features,
+
 .background-header,
 .background-customer-say {
   position: absolute;
@@ -514,7 +514,14 @@ body {
 }
 
 .background-our-features {
-  top: 1636px;
+position: relative;
+}
+
+.background-our-feature::before{
+  background-image: url(assets/background-our-features.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
 }
 
 .background-customer-say {
@@ -1124,14 +1131,6 @@ header {
   padding: 0px;
 }
 
-/* .nimbly-form-table li label {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 12px;
-  margin-top: 16px;
-} */
 
 .nimbly-form-table li input {
   height: 64px;
@@ -1252,4 +1251,14 @@ header {
   line-height: 21px;
   color: #bfbfbf;
   margin: 0;
+}
+
+
+
+@media (max-width:768px){
+  .page-width {
+    width: 768px;
+  }
+
+  
 }
