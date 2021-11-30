@@ -462,7 +462,7 @@ textarea {
   align-items: center;
 
   gap: 8px;
-  margin-left: 24px;
+
   cursor: pointer;
   height: 55px;
 }
@@ -497,13 +497,11 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  
-  z-index: -2;
-  content: '';
-  background-size: cover;
- 
-}
 
+  z-index: -2;
+  content: "";
+  background-size: cover;
+}
 
 .background-header,
 .background-customer-say {
@@ -514,18 +512,39 @@ body {
 }
 
 .background-our-features {
-position: relative;
+  position: relative;
 }
 
-.background-our-feature::before{
+.background-our-features::before {
   background-image: url(assets/background-our-features.svg);
   background-repeat: no-repeat;
   width: 100%;
   position: absolute;
+  
+  left: 0;
+  content: '';
+  background-size: cover;
+  background-position: center;
+ height: 100%;
+ top: -53px;
 }
 
 .background-customer-say {
-  top: 4816px;
+  position: relative;
+}
+
+.background-customer-say::before{
+  background-image: url(assets/background-customer-say.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+  left: 0;
+  content: '';
+  background-size: cover;
+  background-position: center;
+ height: 992px;
+ top: -56px;
 }
 
 .page-width {
@@ -628,7 +647,7 @@ header {
   color: #ffffff;
   border-radius: 4px;
   border: none;
-  width: 190px;
+  
   height: 55px;
   font-size: 18px;
   cursor: pointer;
@@ -652,7 +671,6 @@ header {
 }
 
 .main {
-  display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 24px;
@@ -676,8 +694,8 @@ header {
 }
 
 .main-left-part div {
-  display: flex;
   align-items: center;
+  
 }
 
 .button-and-phone-free-consultation {
@@ -691,6 +709,7 @@ header {
 
 .main-right-part img {
   margin-top: 25px;
+  
 }
 
 .main-companies {
@@ -794,7 +813,6 @@ header {
 .our-features-statistic {
   display: flex;
   margin-bottom: 100px;
-  
 }
 
 .our-features-statistic div {
@@ -968,7 +986,6 @@ header {
   font-size: 24px;
   line-height: 20px;
   /* position: absolute; */
- 
 }
 
 .industries-link button {
@@ -1106,8 +1123,6 @@ header {
   margin: 0 auto;
 }
 
-
-
 .nimbly-form-select-industry {
   width: 527px;
   height: 64px;
@@ -1130,7 +1145,6 @@ header {
   background-color: #f7f8fa;
   padding: 0px;
 }
-
 
 .nimbly-form-table li input {
   height: 64px;
@@ -1253,12 +1267,156 @@ header {
   margin: 0;
 }
 
-
-
-@media (max-width:768px){
-  .page-width {
-    width: 768px;
+@media (max-width: 375px) {
+  body {
+    max-width: 375px;
+    margin: 0 auto;
   }
 
-  
+  .main-left-part div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-width {
+    width: 375px;
+  }
+
+  .mobile-header {
+    width: 375px;
+    height: 69px;
+    align-items: center;
+  }
+
+  .background-hero {
+    width: 375px;
+  }
+
+  .desktop-header {
+    display: none;
+  }
+
+  .button-hero-mobile {
+    border: none;
+    outline: none;
+    background-color: #f3fbf6;
+  }
+
+  .main-left-part h1 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+.main-right-part img {
+  width: 343px;
+  height: 360px;
+  margin: 0 auto;
+}
+
+  .font-size-mobile{
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .button-request-demo {
+    width: 310px;
+  }
+  .hero-text-under {
+    font-size: 12px;
+line-height: 18px;
+  }
+  .kfc-logo-size {
+    width: 109.6px;
+    height: 44.23px;
+  }
+  .cargill-logo-mobile {
+    width: 97.71px;
+    height: 44.23px;
+  }
+  .logo-7eleven-mobile {
+    width: 33.67px;
+    height: 43.57px;
+  }
+.underarmour-logo-moblie {
+  width: 67.54px;
+  height: 39.45px;
+}
+
+.dq-logo-mobile {
+  width: 59.17px;
+  height: 41.24px;
+}
+
+.toto-logo-mobile {
+  width: 122.52px;
+  height: 41.84px;
+}
+
+.video h3 {
+  font-size: 12px;
+  line-height: 18px; 
+}
+.video h2 {
+  font-size: 24px;
+line-height: 36px;
+margin-top: 12px;
+margin-bottom: 8px;
+}
+
+.video p {
+  font-size: 12px;
+line-height: 24px;
+text-align: center;
+}
+.video img {
+  width: 343px;
+  height: 193.38px;
+}
+}
+
+@media (min-width: 769px) {
+  .mobile-header {
+    display: none;
+  }
+
+  .main {
+    display: flex;
+  }
+
+  .main-left-part div {
+    display: flex;
+    
+  }
+
+  .right-button-hero {
+    margin-left: 24px;
+  }
+
+  .button-request-demo {
+    background-color: #13ab4e;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+    color: #ffffff;
+    border-radius: 4px;
+    border: none;
+    width: 190px;
+    height: 55px;
+    font-size: 18px;
+    cursor: pointer;
+    -webkit-box-shadow: 9px 9px 11px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 9px 9px 11px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 9px 9px 11px 0px rgba(50, 50, 50, 0.75);
+    transition: 250ms;
+  }
+
+  .main-right-part img {
+    margin-top: 25px;
+    width: 551.38px;
+    height: 579px;
+  }
 }
