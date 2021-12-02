@@ -789,13 +789,14 @@ width: 190px;
 .our-features ul li button {
   border: none;
   height: 66px;
-  padding-right: 39.3px;
-  padding-left: 43px;
+  padding-right: 34.3px;
+  padding-left: 34px;
   border-radius: 75px;
   background-color: #b4f1cb;
   font-size: 15px;
   display: flex;
   align-items: center;
+  font-family: poppins;
 }
 
 .our-features ul li button:hover {
