@@ -1253,7 +1253,7 @@ header {
 @media (max-width: 768px) {
   body {
     margin: 0 auto;
-    width: 100%;
+    width: 375px;
   }
 
   .page-width {
@@ -1653,7 +1653,7 @@ header {
   }
 
   .nimbly-form-table li input {
-    width: 343px;
+    width: 100%;
   }
 
   .nimbly-form-select-industry {
@@ -1663,7 +1663,7 @@ header {
   }
 
   .nimbly-form-button {
-    width: 343px;
+    width: 100%;
   }
 
 }
