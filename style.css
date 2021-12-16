@@ -525,11 +525,6 @@ body {
   top: 4816px;
 }
 
-.page-width {
-  width: 1170px;
-  margin: 0 auto;
-}
-
 p {
   color: #333333;
 
@@ -1029,7 +1024,6 @@ header {
 }
 
 .customer-say-text-part {
-  margin-left: 64px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -1251,17 +1245,22 @@ header {
 }
 
 @media (max-width: 768px) {
-  body {
-    margin: 0 auto;
-    width: 375px;
-  }
-
   .page-width {
-    width: calc(100% - 38px * 2);
-    margin: 0 auto 38px;
+    padding-left: 38px;
+    padding-right: 38px;
+    max-width: 500px;
+    margin: 0 auto;
   }
 
-  header {
+  .mobile-header button{
+  background-color: #F3FBF6;
+border: none;
+outline: none;  
+width: 24px;
+height: 24px;
+}
+
+  .desktop-header {
     display: none;
   }
 
@@ -1314,7 +1313,7 @@ header {
   .main-left-part div {
     display: flex;
     flex-direction: column;
-    width: 310px;
+    width: 100%;
   }
 
   .right-button-hero {
@@ -1326,6 +1325,7 @@ header {
     position: relative;
     left: -25px;
     margin-bottom: 33px;
+    width: 100%;
   }
 
   .main-left-part h1 {
@@ -1539,7 +1539,7 @@ header {
   }
 
   .how-it-works-right-part img {
-    width: 343px;
+    width: 100%;
     margin-top: 36px;
   }
 
@@ -1584,6 +1584,10 @@ header {
 
   .quotes-mobile img {
     width: 52px;
+  }
+
+  .arrow-Tondy {
+    margin: 0 auto;
   }
 
   .customer-say-top-part h3 {
@@ -1642,10 +1646,10 @@ header {
     margin-top: 36px;
   }
 
-.nimbly-form-table {
-  margin: 0 auto;
-  width: 343px;
-}
+  .nimbly-form-table {
+    margin: 0 auto;
+    width: 343px;
+  }
 
   .nimbly-form-table li {
     display: flex;
@@ -1665,14 +1669,26 @@ header {
   .nimbly-form-button {
     width: 100%;
   }
-
 }
 
 @media (min-width: 768px) {
+  .page-width {
+    width: 1170px;
+    margin: 0 auto;
+  }
+
   .our-features-mobile {
     display: none;
   }
   .statistic-mobile {
+    display: none;
+  }
+
+  .customer-say-text-part {
+    margin-left: 64px;
+  }
+
+  .mobile-header {
     display: none;
   }
 }
