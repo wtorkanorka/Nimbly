@@ -1244,6 +1244,22 @@ header {
   margin: 0;
 }
 
+.alwase-on-display {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  
+  color: white;
+align-items: center;
+justify-content: center;
+display: flex;
+text-decoration: none;
+margin-right: 20px;
+margin-bottom: 20px;
+}
+
 @media (max-width: 768px) {
   .page-width {
     padding-left: 38px;
@@ -1269,6 +1285,7 @@ header {
 
   .desktop-header {
     display: none;
+    
   }
 
   .main {
