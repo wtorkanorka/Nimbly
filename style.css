@@ -758,6 +758,12 @@ header {
   color: #13ab4e;
 }
 
+
+.our-features-mobile-frame {
+  display: none;
+}
+
+
 .our-features ul {
   border-radius: 75px;
   height: 66px;
@@ -1163,9 +1169,10 @@ header {
   justify-content: center;
   background-color: #25322e;
   display: flex;
-  height: 364px;
+  height: auto;
   color: #ffffff;
   padding-top: 60px;
+  padding-bottom: 48px;
   display: flex;
   align-items: flex-start;
 }
@@ -1259,6 +1266,11 @@ margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
+
+  header {
+    justify-content: space-around;
+  }
+
   .alwase-on-display {
     width: 50px;
     height: 50px;
@@ -1300,10 +1312,6 @@ line-height: 36px;
     display: none;
     
   }
-
-  /* .main {
-    display: none;
-  } */
 
   
   .background-hero {
@@ -1393,7 +1401,6 @@ line-height: 36px;
   }
 
   .video h3 {
-    /* margin-top: 56px; */
     margin-bottom: 12px;
     font-size: 12px;
   }
@@ -1416,53 +1423,37 @@ line-height: 36px;
     margin-bottom: 47px;
   }
 
-  .our-features h3 {
-    font-size: 12px;
-    margin-bottom: 12px;
-  }
-
-  .our-features h2 {
-    font-size: 24px;
-  }
-
-  .our-features {
+  .our-features-bottom-text{
     display: none;
   }
 
-  .our-features-mobile {
-    position: relative;
-    width: 100%;
+  .our-features-img {
+    display: none;
   }
 
-  /* .our-features-mobile::before {
-    background-image: url(assets/background-our-features-mobile.svg);
-    background-repeat: no-repeat;
-    z-index: -2;
-    width: 100%;
-    position: absolute;
-    content: "";
-    height: 100%;
-    top: 0;
-    left: 0;
-  } */
-
-  .our-features-mobile h3 {
-    font-family: Poppins;
-
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 18px;
-
-    text-align: center;
+  .our-features p {
+    margin-top: 137px;
   }
 
-  .our-features-mobile h4 {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 36px;
-    text-align: center;
+  .our-features ul {
+    all: unset;
+    list-style-type: none;
+  }
+  
+  .our-features ul li button {
+    all: unset;
+    display: flex;
+    width: 100%;
+    padding: 28px 0;
+    border-bottom: 1px solid #dedede;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  .our-features-mobile-frame {
+    display: flex;
   }
 
   .sections {
@@ -1535,11 +1526,7 @@ line-height: 36px;
     display: none;
   }
 
-  /* .statistic-mobile p{
-  font-size: 18px;
-  line-height: 36px;
-  margin-bottom: 48px;
-} */
+
 
   .statistic-mobile span {
     margin-top: 32px;
@@ -1631,7 +1618,6 @@ line-height: 36px;
 
   .industries-left-part img {
     width: 100%;
-    /* margin-bottom: 56px; */
   }
 
   .quotes-mobile img {
@@ -1722,53 +1708,21 @@ line-height: 36px;
     width: 100%;
   }
 
-  .footer-desktop {
-    display: none;
+  .footer-top-part {
+    padding-bottom: 36px;
+    padding-right: 16px;
+    padding-left: 16px;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-around;
+    gap: 36px;
   }
 
-  .footer-mobile {
-    background-color: rgba(37, 50, 46, 1);
-    height: 100%;
-    width: 100%;
-    padding-top: 32px;
-
-    color: white;
+  .footer-about-us, .footer-more {
+    text-align: center;
   }
 
-  .footer-mobile p {
-    color: white;
-    margin-top: 24px;
-    margin-bottom: 40px;
-  }
-
-  .footer-mobile-content {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    margin-top: 36px;
-  }
-
-  .footer-mobile-content ul li h2 {
-    font-size: 16px;
-    line-height: 24px;
-    color: white;
-    /* margin-bottom: 16px; */
-  }
-
-  .footer-mobile-content li {
-    margin-bottom: 26px;
-    font-size: 14px;
-    line-height: 21px;
-  }
-
-  .footer-mobile-content ul {
-    margin-bottom: 36px;
-  }
-
-  .footer-mobile-content ul li:last-child {
-    margin-bottom: 0px;
-  }
-
+ 
   .footer-bottom-part {
     height: 100%;
     background-color: #1c2d29;
@@ -1777,8 +1731,7 @@ line-height: 36px;
     flex-direction: column-reverse;
     align-items: center;
     gap: 24px;
-    padding-bottom: 16px;
-    padding-top: 16px;
+    padding: 16px;
 
     text-align: center;
   }
@@ -1795,13 +1748,6 @@ line-height: 36px;
     margin: 0 auto;
   }
 
-  .our-features-mobile {
-    display: none;
-  }
-  .statistic-mobile {
-    display: none;
-  }
-
   .customer-say-text-part {
     margin-left: 64px;
   }
@@ -1809,8 +1755,5 @@ line-height: 36px;
   .mobile-header {
     display: none;
   }
-
-  .footer-mobile {
-    display: none;
-  }
+  
 }
